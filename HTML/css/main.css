@@ -1,0 +1,114 @@
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+    border: solid 10px blueviolet;
+    transform-origin: 100% 100%;
+    animation-name: cramer;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: normal;
+}
+.card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 2s;
+}
+#parrado{
+    width: 50%;
+    float: right;
+    text-align:right;
+}
+@keyframes cramer{
+    0%{
+        border: solid 10 px red;
+        transition: rotate(0deg);
+    }
+    50%{
+        border:solid 10px black;
+    }
+    75%{
+        border:solid 10px green;
+    }
+    100%{
+        border:solid 10px rgb(85, 15, 70);
+        transform: rotate(360deg);
+    }
+}
+#parrado2{
+    width: 50%;
+    float: right;
+    text-align:right;
+}
+.olo-conteiner{
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+    border: solid 10px greenyellow;
+}
+.olo-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 2s;
+}
+
+.olo-conteiner:hover .olo-image{
+    filter: hue-rotate(720deg);
+}
+
+#parrado3{
+    width: 50%;
+    float: right;
+    text-align:right;
+}
+.mar-conteiner{
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+    border-radius: 50s%;
+    border: solid 5px aqua;
+}
+.mar-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 2s;
+}
+
+.mar-conteiner:hover{
+    border-radius: 10px;
+}
+#parrado4{
+    width: 50%;
+    float: right;
+    text-align:right;
+}
+.uyu-conteiner{
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 20px #890868;
+    transition: all 2s linear;
+}
+.uyu-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 2s;
+}
+.olo-conteiner:hover .olo-image{
+    filter:hue-rotate(720deg);
+}
+.uyu-conteiner:hover{
+    border-radius: 10px;
+}
